@@ -1,0 +1,1432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 30px;
+    background-color: rgb(227, 230, 231);
+    font-family: Verdana;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.box{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.form-box{
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.btn{
+    height: 35px;
+    background: rgba(45, 76, 122, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.btn:hover{
+    opacity: 0.82;
+}
+
+.submit{
+    width: 100%;
+}
+
+.links{
+    margin-bottom: 15px;
+}
+
+/********* Home *****************/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 30px;
+    background-color: rgb(220, 230, 235);
+    font-family: Verdana;
+}
+
+nav {
+    &.primary-navigation {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 7%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+  
+      brand {
+        font-size: xx-large;
+        font-weight: bolder;
+      }
+      
+      ul li {
+        list-style: none;
+        margin: 0 auto;
+        border-left: 2px solid #3ca0e7;
+        display: inline-block;
+        padding: 0 30px;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        font-family: arvo;
+      }
+  
+      li a {
+        color: black;
+      }
+  
+      li a:hover {
+        color: #3ca0e7;
+      }
+  
+      li:hover {
+        cursor: pointer;
+      }
+  
+      ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 0;
+        display: none;
+        background: white;
+      }
+  
+      ul li:hover > ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 250px;
+        text-align: left;
+        padding-top: 20px;
+        box-shadow: 0px 3px 5px -1px #ccc;
+      }
+  
+      ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        border-style: none;
+      }
+  
+      ul li ul li a:hover {
+        padding-left: 10px;
+        border-left: 2px solid #3ca0e7;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  
+  a {
+  
+      text-decoration: none;
+  
+      &:hover {
+          color: #3CA0E7;
+      }
+   
+  }
+  
+   ul li ul li a { transition: all 0.5s ease; }
+
+
+
+.page-cover {
+    align-items: center;
+    text-align: center;
+    width: 210mm;
+    height: 297mm;
+    background-color: #fff;
+    margin: 70px 0;
+    padding: 19mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-cover h1 {
+    margin-top: 60px;
+    font-size: 3em;
+}
+
+.page-cover h2 {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+.page-cover h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+.page-cover p {
+    margin-bottom: 170px;
+}
+
+.coverlogo {
+    width: 250px;
+    margin-bottom: 10px;
+    margin-top: 67px;
+}
+
+.signature-table {
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 80px 0;
+    margin-top: 70px;
+    padding: 18mm;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+.signature-table td {
+    align-items: center;
+    width: 50px;
+    text-align: center;
+    vertical-align: top;
+    padding: 30px;
+    border: 1px solid #000;
+}
+
+.signature-table .mene, .direktur {
+    width: 80px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.signature-table .name {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-table {
+    align-items: center;
+    text-align: center;
+    width: 210mm;
+    height: 297mm;
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 19mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toc-table {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+    
+.toc-table th, .toc-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+    
+.toc-table th {
+    background-color: #f2f2f2;
+}
+    
+.toc-table td {
+    font-size: 1em;
+}
+
+.document-satu {
+    align-items: center;
+    text-align: center;
+    width: 210mm;
+    height: 297mm;
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-baru {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-baru h2 {
+    text-align: center;
+}
+
+.table-baru th, .table-baru td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.logo-kecil {
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.halaman-satu {
+    align-items: center;
+    text-align: center;
+    width: 210mm;
+    height: 297mm;
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-dua {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-dua th, .table-dua td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.halaman-dua {
+    align-items: center;
+    text-align: center;
+    width: 210mm;
+    height: 297mm;
+    background-color: #fff;
+    margin: 80px 0;
+    padding-top: 10mm;
+    padding-bottom: 10mm;
+    padding-left: 10mm;
+    padding-right: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-tiga {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-tiga th, .table-tiga td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.halaman-tiga {
+    align-items: center;
+    text-align: center;
+    width: 210mm;
+    height: 297mm;
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-empat {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-empat th, .table-empat td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.halaman-empat {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-lima {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-lima th, .table-lima td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.halaman-lima {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-enam {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-enam th, .table-enam td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.halaman-enam {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-tujuh {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-tujuh th, .table-tujuh td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.table-sasaranperu {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+    
+.sasaranperu-table th, .sasaran-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+    
+.sasaranperu-table th {
+    background-color: #f2f2f2;
+}
+    
+.sasaranperu-table td {
+    font-size: 1em;
+}
+
+.logo-baru {
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.custom h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.keterangan tr {
+    font-weight: 1.8em;
+}
+
+.halaman-tujuh {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-delapan {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-delapan th, .table-delapan td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-delapan {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-sembilan {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-sembilan th, .table-sembilan td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-sembilan {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-sepuluh {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-sepuluh th, .table-sepuluh td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-sepuluh {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-sebelas {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-sebelas th, .table-sebelas td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-sebelas {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duabelas {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duabelas th, .table-duabelas td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-duabelas {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-tigabelas {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-tigabelas th, .table-tigabelas td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-tigabelas {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-empatbelas {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-empatbelas th, .table-empatbelas td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-empatbelas {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-limabelas {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-limabelas th, .table-limabelas td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-limabelas {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-enambelas {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-enambelas th, .table-enambelas td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-enambelas {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-tujuhbelas {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-tujuhbelas th, .table-tujuhbelas td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-tujuhbelas {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-delapanbelas {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-delapanbelas th, .table-delapanbelas td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-delapanbelas {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.halaman-sembilanbelas {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duapuluh {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duapuluh th, .table-duapuluh td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-duapuluh {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duasatu {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duasatu th, .table-duasatu td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-duasatu {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duadua {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duadua th, .table-duadua td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-duadua {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duatiga {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duatiga th, .table-duatiga td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-duatiga {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duaempat {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duaempat th, .table-duaempat td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-duaempat {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-dualima {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-dualima th, .table-dualima td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-dualima {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duaenam {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duaenam th, .table-duaenam td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-duaenam {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duatujuh {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duatujuh th, .table-duatujuh td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-duatujuh {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duadelapan {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duadelapan th, .table-duadelapan td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-duadelapan {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duasembilan {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duasembilan th, .table-duasembilan td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-duasembilan {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.halaman-tigapuluh {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.halaman-tigasatu {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-satudaridua {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-satudaridua th, .table-satudaridua td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-tigadua {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duadaridua {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duadaridua th, .table-duadaridua td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-tigatiga {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duadaritiga {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duadaritiga th, .table-duadaritiga td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.halaman-tigaempat {
+    background-color: #fff;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-duadariempat {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-duadariempat th, .table-duadariempat td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.pengesahan-satudarisatu {
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    width: 210mm;
+    height: 297mm;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-pengesahansatu {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-pengesahansatu th, .table-pengesahansatu td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.gmfuqc-table {
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 80px 0;
+    margin-top: 70px;
+    padding: 18mm;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+.gmfuqc-table td {
+    align-items: center;
+    width: 50px;
+    text-align: center;
+    vertical-align: top;
+    padding: 30px;
+    border: 1px solid #000;
+}
+
+.gmfuqc-table .qc, .gmfu {
+    width: 80px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.gmfuqc-table .name {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pengendalian-satudarienam {
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    width: 210mm;
+    height: 297mm;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-pengendaliansatu {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-pengendaliansatu th, .table-pengendaliansatu td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.pengendalian-duadarienam {
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    width: 210mm;
+    height: 297mm;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-pengendaliandua {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-pengendaliandua th, .table-pengendaliandua td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.pengendalian-tigadarienam {
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    width: 210mm;
+    height: 297mm;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-pengendaliantiga {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-pengendaliantiga th, .table-pengendaliantiga td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.pengendalian-empatdarienam {
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    width: 210mm;
+    height: 297mm;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-pengendalianempat {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-pengendalianempat th, .table-pengendalianempat td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.pengendalian-limadarienam {
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    width: 210mm;
+    height: 297mm;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-pengendalianlima {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-pengendalianlima th, .table-pengendalianlima td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.pengendalian-enamdarienam {
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    width: 210mm;
+    height: 297mm;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-pengendalianenam {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-pengendalianenam th, .table-pengendalianenam td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.intruksi-satu {
+    text-align: center;
+    background-color: #fff;
+    width: 210mm;
+    height: 297mm;
+    margin: 80px 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-iksatu {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+.table-iksatu th, .table-iksatu td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: middle;
+}
+
+.print-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+
+@media print {
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-cover, .document-satu, .halaman-satu, .halaman-dua, .halaman-tiga {
+        margin: 0;
+        padding: 10mm;
+        border: none;
+        page-break-before: always;
+        page-break-after: always;
+    }
+    
+    .print-icon {
+        display: none;
+    }
+}
